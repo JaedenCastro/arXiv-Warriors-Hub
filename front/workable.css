@@ -1,0 +1,77 @@
+#hell{
+    width:auto;
+    background-image:url('images/BG.png');
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+#hello{
+    background-color: bisque;
+    font-family: Tahoma;
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: -5px;
+    width: 101.5%;
+    margin-left: -1%;
+
+}
+#mains{
+    background-color: rgba(0, 1, 1, 0.17);
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: auto;
+    border-radius: 5px;
+    width: fit-content;   
+    float: left;
+    font-family: Tahoma;
+}
+#bert{
+    background-color: rgb(240, 248, 255, 0.7);
+    padding: 10px;
+    padding-left:15px;
+    padding-right:15px;
+    height: auto;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 15%;
+    border-radius: 5px;
+    text-align: center;
+    font-size:larger;
+    font-family:Impact;
+    letter-spacing: 3px;
+}
+#news{
+    align-self: center;
+}
+#state{
+    align-self:center;
+}
+#instruc{
+    background-color: rgba(250, 235, 215, 0.85);
+    padding: 10px;
+    padding-left:30px;
+    padding-right:30px;
+    height: auto;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+#mallow{
+    background-color: rgba(64, 83, 94, 0.17);
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: fit-content;
+}
