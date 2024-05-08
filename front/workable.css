@@ -47,10 +47,12 @@
     letter-spacing: 3px;
 }
 #news{
-    align-self: center;
+    margin-left: 61%;
+    text-align: center;
 }
 #state{
-    align-self:center;
+    margin-left:auto;
+    margin-right:50%;
 }
 #instruc{
     background-color: rgba(250, 235, 215, 0.85);
@@ -70,8 +72,7 @@
     padding-left: 150px;
     padding-right: 150px;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 58%;
     border-radius: 5px;
     width: fit-content;
 }
