@@ -3,7 +3,7 @@
 	
 <head>
 	<title>Anti-Fake News Mechanism</title>
-		<link rel="stylesheet" href="front/workable.css">
+	<link rel="stylesheet" href="workable.css">
 </head>
 	
 	
@@ -35,10 +35,18 @@
 		<form action="/url" method="GET" id="state">
 			<p>Please enter your chosen filipino news article:</p>
 			<input type="text" placeholder="Type here">
+			<input type="button" value="Submit" onclick="result()">
 		</form>
+		<script>
+			function result(){
+				let x = Math.random() * 10;
+				document.getElementById("demo").innerHTML = Math.round(x);
+				
+			}
+		</script>
 	</div>
 	<div id="mallow">
-		<p style="text-align: center;">Interpretation:</p>
+		<p style="text-align: center;">Interpretation:<p id="demo"></p></p>
 	</div>
 </body>
 	
