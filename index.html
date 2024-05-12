@@ -1,0 +1,54 @@
+<html>
+	
+	
+<head>
+	<title>Anti-Fake News Mechanism</title>
+	<link rel="stylesheet" href="front/workable.css">
+</head>
+	
+	
+<body id="hell">
+	<header id="hello">
+		<div>
+			<h1 style="margin-left: 2%;">Fake News Classification AI Tool</h1>
+			<div style="background-color:rgba(119, 111, 70, 0.4);width:100%;height:30px;margin:auto;">
+				<h3 style="font-family:helvetica; text-align: center; margin-right: 80%;">BERT News Classifier AI</h3>
+			</div>
+		</div>
+		
+	</header>
+	
+	<div id="mains">
+		<h3 style="text-align: center;">HOW TO USE THE BERT NEWS CLASSIFIER</h3>
+		<div id="instruc">
+			<p style="text-align: center;">Before using the AI, you must first follow these instructions:</p>
+			<p style="text-align: left;">- Process your data first before inputting it for classification.</p>
+			<p style="text-align: left;">- Convert all uppercase letters into lowercase letters.</p>
+			<p style="text-align: left;">- Get rid of all the special characters and unnecessary spaces.</p>
+		</div>
+		
+	</div>
+	<div id="bert">
+		<p>BERT NEWS CLASSIFIER</p>
+	</div>
+	<div id="news">
+		<form action="/url" method="GET" id="state">
+			<p>Please enter your chosen filipino news article:</p>
+			<input type="text" placeholder="Type here">
+			<input type="button" value="Submit" onclick="result()">
+		</form>
+		<script>
+			function result(){
+				let x = Math.random() * 10;
+				document.getElementById("demo").innerHTML = Math.round(x);
+				
+			}
+		</script>
+	</div>
+	<div id="mallow">
+		<p style="text-align: center;">Interpretation:<p id="demo"></p></p>
+	</div>
+</body>
+	
+	
+</html>
