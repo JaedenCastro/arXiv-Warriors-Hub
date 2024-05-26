@@ -10,37 +10,45 @@
 <body id="hell">
 	<header id="hello">
 		<div>
-			<h1 style="margin-left: 2%;">News Classification AI Tool</h1>
-			<div style="background-color:rgba(119, 111, 70, 0.4);width:100%;height:30px;margin:auto;">
-				<h3 style="font-family:helvetica; text-align: center; margin-right: 80%;">BERT News Classifier AI</h3>
+			<h1 style="margin-left: 2%;">News Provider Identification AI</h1>
+			<div style="background-color:#006769;width:100%;height:40px;">
+				<h3 style="font-family:Garamond; text-align: center; margin-right: 75%;padding-top:8px;">Made Using BERT Model</h3>
 			</div>
 		</div>
-		
 	</header>
-	
-	<div id="mains">
-		<h3 style="text-align: center;">HOW TO USE THE BERT NEWS CLASSIFIER</h3>
-		<div id="instruc">
-			<p style="text-align: center;">Before using the AI, you must first follow these instructions:</p>
-			<p style="text-align: left;">- Process your data first before inputting it for classification.</p>
-			<p style="text-align: left;">- Convert all uppercase letters into lowercase letters.</p>
-			<p style="text-align: left;">- Get rid of all the special characters and unnecessary spaces.</p>
-		</div>
+	<div id="back">	
+		<div id="middle">
+			<div id="mains">
+				<h3 style="text-align: center;">HOW TO USE THE BERT NEWS IDENTIFIER</h3>
+				<div id="instruc">
+					<p style="text-align: center;">Before using the AI, you must first follow these instructions:</p>
+					<p style="text-align: left;">- Process your data first before inputting it for classification.</p>
+					<p style="text-align: left;">- Convert all uppercase letters into lowercase letters.</p>
+					<p style="text-align: left;">- Emit all special characters and unnecessary spaces.</p>
+					<p style="text-align: left;">- Make sure there are no invisible characters</p>
+					<p style="text-align: left;">- Enter text into the text box</p>
+					<p style="text-align: left;">- Press Submit</p>
+				</div>
 		
-	</div>
-	<div id="bert">
-		<p>BERT NEWS CLASSIFIER</p>
-	</div>
-	<div id="news">
-		<form action="/url" method="GET" id="state">
-			<p>Please enter your chosen filipino news article:</p>
-			<input type="text" id = "news-input" placeholder="Type here">
-			<input type="button" value="Submit" onclick="result()">
-		</form>
-		<script src="front/scripts.js"></script>
-	</div>
-	<div id="mallow">
-		<p style="text-align: center;">Interpretation:<p id="demo"></p></p>
+			</div>
+			<div id="bert">
+				<p>BERT NEWS PROVIDER IDENTIFIER</p>
+			</div>
+			<div id="news">
+				<form action="/url" method="GET" id="state"class="form-inline">
+					<div id="for"class="form-group" style="display:block">
+						<p style="font-family: Garamond;font-weight: bold;">Please enter the information you want to locate:</p>
+						<textarea class="form-control" rows="1" id="news-input" placeholder="Type here"></textarea>
+						<input type="button" value="Submit" onclick="result()">
+					</div>
+				</form>
+			<script src="front/scripts.js"></script>
+			</div>
+			<div id="mallow">
+				<p style="text-align:left;font-family:'Garamond';font-weight: bold;">Result:
+					<p style="text-align:center;font-family:Garamond;"id="demo"></p></p>
+			</div>
+		</div>
 	</div>
 </body>
 	
