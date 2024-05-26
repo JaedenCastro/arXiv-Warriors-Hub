@@ -1,6 +1,26 @@
+#back{
+    position:relative;
+    background-color: #9DDE8B;
+    width:fit-content;
+    padding-bottom:3%;
+    padding-left: 130px;
+    padding-right: 130px;
+    margin: 100px auto auto auto;
+    border-radius: 15px;
+}
+#middle{
+    background-color: #40A578;
+    width: fit-content;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:130px;
+    padding-right: 130px;
+    margin:auto;
+    border-radius: 10px;
+}
 #hell{
     width:auto;
-    background-image:url('../images/BG.png');
+    background-color: #E6FF94;
     background-repeat: no-repeat;
     background-size: 115%;
     background-position-x: center;
@@ -8,38 +28,43 @@
     background-attachment: fixed;
 }
 #hello{
-    background-color: bisque;
-    font-family: Tahoma;
+    position: fixed;
+    z-index:1000;
+    background-color:#089678;
+    font-family: "Garamond";
     font-size: larger;
     font-weight: bold;
-    padding-bottom: -5px;
     width: 101.5%;
     margin-left: -1%;
+    top: 0;
+    color:whitesmoke;
+    text-shadow: 0 0 2px lightblue;
 
 }
 #mains{
     background-color: rgba(0, 1, 1, 0.17);
     padding: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     width: fit-content;   
-    float: left;
-    font-family: Tahoma;
+    font-family: "Garamond";
+    color:whitesmoke;
+    text-shadow: 0 0 2.5px lightblue;
 }
 #bert{
-    background-color: rgb(240, 248, 255, 0.7);
+    background-color: rgba(64, 83, 94, 0.17);
     padding: 10px;
     padding-left:15px;
     padding-right:15px;
     height: auto;
     width: 400px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: auto;
-    margin-right: 15%;
+    margin-right: auto;
     border-radius: 5px;
     text-align: center;
     font-size:larger;
@@ -47,32 +72,44 @@
     letter-spacing: 3px;
 }
 #news{
-    margin-left: 61%;
+    margin-left: auto;
     text-align: center;
+}
+#for{
+    margin-left:auto;
+    margin-right:auto;
 }
 #state{
     margin-left:auto;
-    margin-right:50%;
+    margin-right:auto
 }
 #instruc{
-    background-color: rgba(250, 235, 215, 0.85);
+    background-color: #2d6357;
     padding: 10px;
     padding-left:30px;
     padding-right:30px;
     height: auto;
-    width: 400px;
+    width: 650px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+    font-family:"Courier New";
 }
 #mallow{
     background-color: rgba(64, 83, 94, 0.17);
     padding: 20px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 30px;
-    margin-left: 58%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
-    width: fit-content;
+    width: 300px;
+}
+input,
+select,
+textarea{
+    max-width: 200px;
+    max-height: 3rem;
 }
