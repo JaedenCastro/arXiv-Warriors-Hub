@@ -1,0 +1,49 @@
+# Cleans output
+@echo off
+# Environment variable is set to the path below
+set DATA_DIR=C:\Users\TUF\PycharmProjects\pythonProject\Filipino-Text-Benchmarks-master\Filipino-Text-Benchmarks-master\data\newsph-nli
+
+#Allows me to access train.py by providing the path
+python C:\Users\TUF\PycharmProjects\pythonProject\Filipino-Text-Benchmarks-master\Filipino-Text-Benchmarks-master\train.py ^
+    #For everything below, the "--" is necessary for command line arguments, the first word is the variable and the word that follows after is its value. 
+    #Also, to continue the input even after pressing enter, I used ^
+    --pretrained jcblaise/bert-tagalog-base-cased ^
+    --train_data %DATA_DIR%\train.csv ^
+    --valid_data %DATA_DIR%\valid.csv ^
+    --test_data %DATA_DIR%\test.csv ^
+    --text_columns s1,s2 ^ #NOTE: only do this when using newsph-nli because that's the only data set with columns s1,s2
+    --data_pct 1.0 ^
+    --checkpoint finetuned_model ^
+    --do_train true ^
+    --do_eval true ^
+    --msl 128 ^
+    --optimizer adam ^
+    --batch_size 32 ^
+    --weight_decay 1e-8 ^
+    --learning_rate 2e-4 ^
+    --adam_epsilon 1e-6 ^
+    --warmup_pct 0.1 ^
+    --epochs 3 ^
+    --seed 45
+
+@echo off
+set DATA_DIR=C:\Users\TUF\PycharmProjects\pythonProject\Filipino-Text-Benchmarks-master\Filipino-Text-Benchmarks-master\data\newsph-nli
+python C:\Users\TUF\PycharmProjects\pythonProject\Filipino-Text-Benchmarks-master\Filipino-Text-Benchmarks-master\train.py ^
+    --pretrained jcblaise/bert-tagalog-base-cased ^
+    --train_data %DATA_DIR%\train.csv ^
+    --valid_data %DATA_DIR%\valid.csv ^
+    --test_data %DATA_DIR%\test.csv ^
+    --text_columns s1,s2 ^
+    --data_pct 1.0 ^
+    --checkpoint finetuned_model ^
+    --do_train true ^
+    --do_eval true ^
+    --msl 128 ^
+    --optimizer adam ^
+    --batch_size 32 ^
+    --weight_decay 1e-8 ^
+    --learning_rate 2e-4 ^
+    --adam_epsilon 1e-6 ^
+    --warmup_pct 0.1 ^
+    --epochs 3 ^
+    --seed 45

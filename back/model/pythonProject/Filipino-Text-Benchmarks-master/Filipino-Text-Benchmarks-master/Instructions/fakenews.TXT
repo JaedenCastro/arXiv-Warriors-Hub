@@ -1,0 +1,26 @@
+NOTE: IDK HOW TO TRAIN ON A CORPORA WITHOUT TEST AND TRAINING DATA. I JUST COPY-PASTED FROM THE OTHER TEXT DOCUMENTS
+@echo off
+set DATA_DIR=C:\Users\TUF\PycharmProjects\pythonProject\Filipino-Text-Benchmarks-master\Filipino-Text-Benchmarks-master\data\dengue
+
+#Allows me to access train.py by providing the path
+python C:\Users\TUF\PycharmProjects\pythonProject\Filipino-Text-Benchmarks-master\Filipino-Text-Benchmarks-master\train.py ^
+    #Also, to continue the input even after pressing enter, I used ^
+    --pretrained jcblaise/bert-tagalog-base-cased ^
+    --train_data %DATA_DIR%\train.csv ^
+    --valid_data %DATA_DIR%\valid.csv ^
+    --test_data %DATA_DIR%\test.csv ^
+    --label_columns absent,dengue,health,mosquito,sick ^
+    --data_pct 1.0 ^
+    --checkpoint finetuned_model ^
+    --do_train true ^
+    --do_eval true ^
+    --msl 128 ^
+    --optimizer adam ^
+    --batch_size 32 ^
+    --add_token [LINK],[MENTION],[HASHTAG] ^
+    --weight_decay 1e-8 ^
+    --learning_rate 2e-4 ^
+    --adam_epsilon 1e-6 ^
+    --warmup_pct 0.1 ^
+    --epochs 3 ^
+    --seed 42
